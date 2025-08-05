@@ -3,13 +3,13 @@ resource "azurerm_resource_group" "mqt-rg01" {
     location ="eastus" 
 }
 
-resource "azurerm_resource_group" "mqt-rg02" {
-    name = "bhu2"
+resource "azurerm_resource_group" "mqt-rg10" {
+    name = "bhu10"
     location ="eastus" 
 }
 
-resource "azurerm_resource_group" "mqt-rg02" {
-    name = "bhu3"
+resource "azurerm_resource_group" "mqt-rg11" {
+    name = "bhu11"
     location ="eastus" 
 }
 
