@@ -16,6 +16,7 @@ steps:
     backendAzureRmStorageAccountName: 'mtk12345'
     backendAzureRmContainerName: 'mtkstg'
     backendAzureRmKey: 'bhui.tfstate'
+    environmentServiceNameAzureRM: My-pipeline
 - task: TerraformTask@5
   inputs:
     provider: 'azurerm'
