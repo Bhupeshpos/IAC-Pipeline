@@ -7,6 +7,7 @@ steps:
 - task: TerraformInstaller@1
   inputs:
     terraformVersion: 'latest'
+
 - task: TerraformTask@5
   inputs:
     provider: 'azurerm'
@@ -16,13 +17,16 @@ steps:
     backendAzureRmStorageAccountName: 'mtk12345'
     backendAzureRmContainerName: 'mtkstg'
     backendAzureRmKey: 'bhui.tfstate'
-    environmentServiceNameAzureRM: My-pipeline
+
 - task: TerraformTask@5
   inputs:
     provider: 'azurerm'
     command: 'plan'
+    environmentServiceNameAzureRM: 'My-pipeline'
+
 - task: TerraformTask@5
   inputs:
     provider: 'azurerm'
     command: 'apply'
     environmentServiceNameAzureRM: 'My-pipeline'
+    commandOptions: '-auto-approve'
