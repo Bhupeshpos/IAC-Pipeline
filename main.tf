@@ -7,6 +7,12 @@ resource "azurerm_resource_group" "mqt-rg02" {
     name = "bhu2"
     location ="eastus" 
 }
+
+resource "azurerm_resource_group" "mqt-rg02" {
+    name = "bhu3"
+    location ="eastus" 
+}
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "bhui"
