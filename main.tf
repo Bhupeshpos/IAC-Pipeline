@@ -16,7 +16,5 @@ terraform {
 
     key                  = "bhui.tfstate"
   }
-
-
 }
 
